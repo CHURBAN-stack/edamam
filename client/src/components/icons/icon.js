@@ -1,0 +1,1 @@
+<object id="svg-object" data="path/to/TasteBase_AllergenIcon-Alcohol.svg" type="image/svg+xml"></object>
