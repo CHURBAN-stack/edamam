@@ -48,6 +48,10 @@ var warning = {
         flag : false,
         img : 'icon_folder/TasteBase_AllergenIcon-Shellfish.svg',
     },
+    "Peanuts-Free" : {
+        flag : false,
+        img : 'icon_folder/TasteBase_AllergenIcon-Peanuts.svg',
+    },
 };
 
 
