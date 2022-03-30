@@ -50,6 +50,7 @@ var warning = {
     },
 };
 
+
   //Set the flags
   for (let i in healthLabels) {
     let f = healthLabels[i];
@@ -108,7 +109,7 @@ var warning = {
             <Typography component={"span"} sx={{ fontFamily: "Lato" }}>
               <ul key={uuidv4()} className={style.healthLabelsList}>
                 {icons.map((icon) => (
-                  <li key={uuidv4()}><img src={(icon.img)} alt={icon.label}></img></li>
+                  <li key={uuidv4()}className={style.healthLabels}><img src={(icon.img)} alt={icon.label}></img></li>
                 ))}
               </ul>
             </Typography>

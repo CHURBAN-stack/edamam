@@ -69,3 +69,9 @@ h1 {
 .MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root{
 	font-family: "Lato";
 }
+
+li
+img {
+width: 200px;	
+height: auto;
+}
