@@ -33,27 +33,54 @@ const RecipeDetails = ({
 
   console.log({ rating });
 
-//   var warning = [
-//     //"Shellfish-Free": {
-//         {
-//       label : "Contains Shellfish",
-//       flag: false,
-//       img: "../src/icon_folder/TasteBase_AllergenIcon-Shellfish.svg",
-//       name: "Shellfish-Free",
-//     },
-// ];
+  //   var warning = [
+  //     //"Shellfish-Free": {
+  //         {
+  //       label : "Contains Shellfish",
+  //       flag: false,
+  //       img: "../src/icon_folder/TasteBase_AllergenIcon-Shellfish.svg",
+  //       name: "Shellfish-Free",
+  //     },
+  // ];
 
-var warning = {
-    "Shellfish-Free" : {
-        flag : false,
-        img : 'icon_folder/TasteBase_AllergenIcon-Shellfish.svg',
+  var warning = {
+    "Shellfish-Free": {
+      flag: false,
+      img: "icon_folder/TasteBase_AllergenIcon-Shellfish.svg",
     },
-    "Peanuts-Free" : {
-        flag : false,
-        img : 'icon_folder/TasteBase_AllergenIcon-Peanuts.svg',
+    "Peanuts-Free": {
+      flag: false,
+      img: "icon_folder/TasteBase_AllergenIcon-Peanuts.svg",
     },
-};
+    "Lactose-Free": {
+      flag: false,
+      img: "icon_folder/TasteBase_AllergenIcon-Lactose.svg",
+    },
+    "Nuts-Free": {
+      flag: false,
+      img: "icon_folder/TasteBase_AllergenIcon-Nuts.svg",
+    },
 
+    "Egg-Free": {
+      flag: false,
+      img: "icon_folder/TasteBase_AllergenIcon-Egg.svg",
+    },
+
+    "Gluten-Free": {
+      flag: false,
+      img: "icon_folder/TasteBase_AllergenIcon-Gluten.svg",
+    },
+
+    "Soy-Free": {
+      flag: false,
+      img: "icon_folder/TasteBase_AllergenIcon-Soy.svg",
+    },
+
+    "Molluscs-Free": {
+      flag: false,
+      img: "icon_folder/TasteBase_AllergenIcon-Molluscs.svg",
+    },
+  };
 
   //Set the flags
   for (let i in healthLabels) {
@@ -113,7 +140,9 @@ var warning = {
             <Typography component={"span"} sx={{ fontFamily: "Lato" }}>
               <ul key={uuidv4()} className={style.healthLabelsList}>
                 {icons.map((icon) => (
-                  <li key={uuidv4()}className={style.healthLabels}><img src={(icon.img)} alt={icon.label}></img></li>
+                  <li key={uuidv4()} className={style.healthLabels}>
+                    <img src={icon.img} alt={icon.label}></img>
+                  </li>
                 ))}
               </ul>
             </Typography>
