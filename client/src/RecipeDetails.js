@@ -78,7 +78,7 @@ const RecipeDetails = ({
 
     "Molluscs-Free": {
       flag: false,
-      img: "icon_folder/TasteBase_AllergenIcon-Molluscs.svg",
+      img: "icon_folder/TasteBase_AllergenIcon-Mollusk.svg",
     },
   };
 
